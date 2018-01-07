@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/messages_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/messages_height">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_messages"
+        android:layout_width="@dimen/messages_height"
+        android:layout_height="@dimen/messages_height"
+        android:padding="@dimen/messages_image_padding"
+        tools:src="@drawable/ic_photo" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/messages_height"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_messages_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/messages_image_padding"
+                tools:text="Matthew Strukov"/>
+
+            <TextView
+                android:id="@+id/text_messages_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/messages_image_padding"
+                android:paddingStart="@dimen/messages_image_padding"
+                tools:text="15 dec" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/message_padding_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/messages_image_padding"
+                tools:text="Hello, world."/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

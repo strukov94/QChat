@@ -1,0 +1,6 @@
+flask>=0.12.2
+sqlalchemy>=1.1.15
+Flask-SQLAlchemy>=2.1
+psycopg2==2.7.3.2
+google-api-python-client==1.6.4
+requests==2.18.4

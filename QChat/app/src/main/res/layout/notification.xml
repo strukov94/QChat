@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_notification"
+        android:layout_width="@dimen/notification_height"
+        android:layout_height="@dimen/notification_height"
+        android:padding="@dimen/messages_image_padding"
+        tools:src="@drawable/ic_photo" />
+    <TextView
+        android:id="@+id/text_notification_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/image_notification"
+        android:paddingTop="@dimen/messages_image_padding"
+        tools:text="Matthew Strukov" />
+
+    <TextView
+        android:id="@+id/text_notification_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/messages_image_padding"
+        android:paddingEnd="@dimen/messages_image_padding"
+        android:paddingStart="@dimen/messages_image_padding"
+        android:layout_alignParentEnd="true"
+        tools:text="15 dec" />
+
+    <TextView
+        android:id="@+id/text_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingTop="@dimen/messages_image_padding"
+        android:paddingEnd="@dimen/messages_image_padding"
+        android:layout_below="@+id/text_notification_name"
+        android:layout_toEndOf="@+id/image_notification"
+        tools:text="Hello, world."/>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/message_time_padding"
+        android:paddingEnd="@dimen/message_time_padding"
+        android:paddingTop="@dimen/message_time_padding"
+        tools:text="23:02"/>
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/message_padding_top"
+        android:paddingStart="@dimen/message_padding"
+        android:paddingEnd="@dimen/message_padding"
+        android:paddingBottom="@dimen/message_padding"
+        tools:text="Hello, World!!!"/>
+
+</LinearLayout>

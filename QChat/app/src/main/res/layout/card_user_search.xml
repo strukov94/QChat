@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_user"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_user_height">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_card_user"
+        android:layout_width="@dimen/card_user_text_padding"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingEnd="@dimen/padding_card_user_avatar"
+        android:paddingStart="@dimen/padding_card_user_avatar" />
+
+    <TextView
+        android:id="@+id/text_card_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/image_card_user"
+        tools:text="Matthew Strukov" />
+
+</RelativeLayout>
